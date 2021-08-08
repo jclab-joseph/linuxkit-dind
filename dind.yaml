@@ -44,7 +44,7 @@ services:
 files:
   - path: var/lib/docker
     directory: true
-  - path: daemon.json
+  - path: etc/docker/daemon.json
     source: daemon.json
     mode: "0444"
     optional: true
