@@ -2,7 +2,7 @@ name: build and publish
 on: [push]
 jobs:
   push_to_registry:
-    name: Push Docker image to gchr.io
+    name: build linuxkit image
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
