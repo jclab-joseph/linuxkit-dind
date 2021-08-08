@@ -1,4 +1,3 @@
-image: linuxkit-dind
 kernel:
   image: linuxkit/kernel:5.10.47
   cmdline: "console=tty0 console=ttyS0 console=ttyAMA0 console=ttysclp0"
