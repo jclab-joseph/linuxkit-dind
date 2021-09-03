@@ -25,6 +25,10 @@ onboot:
   - name: metadata
     image: linuxkit/metadata:91125438842110e7709811997815b7b33dc18d1d
 services:
+  - name: qemu-ga
+    image: linuxkit/qemu-ga:3e6f6fbeb352d729c7bb34dac0ca7822f690a5de
+    binds:
+      - /dev:/dev
   - name: getty
     image: linuxkit/getty:ed32c71531f5998aa510847bb07bd847492d4101
     env:
