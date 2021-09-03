@@ -1,0 +1,6 @@
+#cloud-config
+user: root
+password: root
+ssh_authorized_keys:
+  - ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBAROPyRQB7RgGNLs9P/+PYQnk/U7mCFdnkCLIfoN2PFz5LSrZ5ue1rFsw+uIPyshl47T2j14wlnwtxrA80PrPJc=
+

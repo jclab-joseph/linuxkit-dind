@@ -1,0 +1,7 @@
+image: linuxkit-dind
+network: true
+config:
+  pid: host
+  ipc: host
+  capabilities:
+    - all
