@@ -27,8 +27,13 @@ onboot:
 services:
   - name: qemu-ga
     image: linuxkit/qemu-ga:3e6f6fbeb352d729c7bb34dac0ca7822f690a5de
+    command: ["/usr/bin/qemu-ga"]
     binds:
       - /dev:/dev
+    pid: host
+    capabilities:
+      - CAP_KILL
+      - CAP_SYS_BOOT
   - name: getty
     image: linuxkit/getty:ed32c71531f5998aa510847bb07bd847492d4101
     env:
